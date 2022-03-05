@@ -22,10 +22,10 @@
         <h1 class="text-center">Registration Form</h1>
         <div class="col-sm-8">
             
-            <form action="/log"  method="post" enctype="multipart/form-data">
+            <form action="/register"  method="post" enctype="multipart/form-data">
 @csrf
 
-<fieldset class="mt-2">
+<fieldset class="mt-2"><b>Role</b>
  <select name="role">
      <option></option>
  <option value="user">User</option>

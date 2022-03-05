@@ -25,7 +25,7 @@ if ($request->pass==$request->cpass) {
        'password'=>$request->pass,
 
    ]);
-   return redirect('/showdata');
+   return redirect('/login');
 } 
 else {
     return redirect('/');
@@ -35,7 +35,7 @@ else {
 
     public function show(){
       $user=DB::table('table_singh')->get();
-      return view('showdata',['user'=>$user]); 
+      return view('showdata',['users'=>$user]); 
     }
     public function destroy($id) {
         DB::delete('delete from table_singh where id = ?',[$id]);
